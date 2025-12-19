@@ -1,0 +1,25 @@
+[package]
+name = "conduit5"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Utilities
+tracing = "0.1"
+tracing-subscriber = "0.3"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.9.8"
+
+# Networking helpers
+bytes = "1"
+ipnet = "2"
+futures = "0.3"
+
+[dev-dependencies]
+# For tests
+tokio = { version = "1", features = ["full"] }
